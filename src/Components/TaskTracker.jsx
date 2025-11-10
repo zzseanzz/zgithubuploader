@@ -18,11 +18,11 @@ const TaskTracker = () => {
     <div>
       <input type="text" ref={inputRef} placeholder="Type out a task to do" />
       <button
-        onClick={() =>
+        onClick={() => {
           saveTask(Date.now().toString(), {
             title: inputRef.current.value,
-          })
-        }
+          });
+        }}
       >
         Add Task
       </button>
