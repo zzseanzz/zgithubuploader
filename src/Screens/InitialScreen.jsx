@@ -21,7 +21,7 @@ const InitialScreen = () => {
       <AutoCorrectTextInput documentElementId={"txt1"} />
       <AutoCorrectTextInput documentElementId={"txt2"} inputType={"input"} />
       <NoteUploader />
-      <SexyImage />
+      {/* <SexyImage /> */}
     </div>
   );
 };

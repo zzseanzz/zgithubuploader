@@ -61,9 +61,7 @@ const useIndexedDB = () => {
 
   const handleEditConfirm = (index) => {
     setTaskList((prev) =>
-      prev.map((item, i) =>
-        i === index ? { ...prev, title: editInput } : item
-      )
+      prev.map((item, i) => (i === index ? editInput : item))
     );
     saveTask(currentKeys[index], {
       title: editInput,
